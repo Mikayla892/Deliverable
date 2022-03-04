@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Huskies</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="tob-bar">
+	<h1>Why people should get Huskies.</h1>
+</div>
+
+<div class="content">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/img_1.jpg" style="width:100%">
+  <div class="text">Smile!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/img_2.jpg" style="width:100%">
+  <div class="text">Snow Buddies!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/img_3.jpg" style="width:100%">
+  <div class="text">Besties!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+</div>
+
+		Huskies are good-natured and willing to please. Plus, they're human-oriented, which means that they're happiest when they're with you. They look to you for companionship, guidance, and love. This is one of the qualities that makes them great pets their very willingness to share their life with yours.
+		<ul>
+			A few reason why you should get a husky:
+			
+			<li>Huskies Make Terrific Exercise Partners</li>
+			<li>A Husky Can Pull You Wherever You Want to Go</li>
+			<li>Have No Doggie Odor</li>
+			<li>Huskies Are Educational</li>
+			<li>Huskies Provide Social Mobility</li>
+			<li>Huskies Are Great with Children</li>
+			<li>Remind You What Really Matters in Life</li>
+			<li>Huskies Will Make You a Better Citizen</li>
+			<li>Huskies Love You Unconditionally</li>
+		</ul>
+
+		Now, you might be wondering if Huskies are a good family dog, well they definitely are. Huskies make great pets for households with children. They can be very tolerant of children, but like all other dogs, should be supervised when around young children. Siberian Huskies do get along with other dogs but it is still important to take your puppy to socialization classes. However, they  are very dramatic when they want to be  so here's a video on Huskies being dramatic. <button>read less</button>
+
+
+
+<div class="footer">
+	
+	
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/Pq-eksUGCrY">
+</iframe>
+
+<div class="sticky">Just Huskies being Huskies.</div>
+</body>
+</html>
